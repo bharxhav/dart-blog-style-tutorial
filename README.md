@@ -17,3 +17,7 @@ Dart is an open-source general-purpose programming language. It is originally de
 ## Audience
 
 This tutorial will be quite helpful for all those developers who want to develop single-page web applications using Dart. It is meant for programmers with a strong hold on object-oriented concepts.
+
+## Prerequsites
+
+The tutorial assumes that the readers have adequate exposure to object-oriented programming concepts. If you have worked on JavaScript, then it will help you further to grasp the concepts of Dart quickly.
