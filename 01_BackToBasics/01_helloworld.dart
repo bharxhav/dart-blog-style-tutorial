@@ -14,3 +14,5 @@ or
 just like in python
 
 */
+
+// Exeucution is $ dart file_name.dart
