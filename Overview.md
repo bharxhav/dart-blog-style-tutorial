@@ -8,11 +8,11 @@ Google has released a special build of Chromium – the Dart VM. Using Dartium m
 
 The following table compares the features of Dart and JavaScript.
 
-|Feature|Dart|Javascript|
-|---|---|---|
-|Type System|Optional, dynamic|Weak, dynamic|
-|Classes|Yes, single inheritance|Prototypical|
-|Interfaces|Yes, multiple interfaces|No|
-|Concurrency|Yes, with isolates|Yes with HTML5 web workers|
+| Feature     | Dart                     | Javascript                 |
+| ----------- | ------------------------ | -------------------------- |
+| Type System | Optional, dynamic        | Weak, dynamic              |
+| Classes     | Yes, single inheritance  | Prototypical               |
+| Interfaces  | Yes, multiple interfaces | No                         |
+| Concurrency | Yes, with isolates       | Yes with HTML5 web workers |
 
 This tutorial provides a basic level understanding of the Dart programming language.
