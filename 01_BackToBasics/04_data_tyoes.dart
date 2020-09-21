@@ -14,3 +14,17 @@ void main() {
 
   print("$numa $deci $name $is_bool $nums $dict");
 }
+
+/*
+Printing Types : 
+
+# Method 1
+print('The values are: ${[x, y, z]}')
+
+# Method 2
+print('The values are: $x, $y, $z')
+
+# Method 3
+['The values are:', x, y, z].forEach(print);
+
+*/
