@@ -7,14 +7,14 @@ After thorough practical understanding, here is the best intel possible on this 
 const keyword used to make a variable to store a compile time constant value. Compile time constant value is a value which will be constant while compiling :-)
 
 For example `5` is a compile time constant. While `DateTime.now()` which is not compile time constant. Because this method will return the __time when the line is getting executed__ at runtime. So we can't assign the `DateTime.now()` to a `const` variable.
-```
+```dart
 const a = 5;
 // Uncommenting below statement will cause compile time error.
 // Because we can't able to assign a runtime value to a const variable
 // const b = DateTime.now();
 ```
 Should be **initialized in the same line**
-```
+```dart
 const a = 5;
 // Uncommenting below 2 statement will cause compilation error.
 // Because const variable must be initialized at the same line.
@@ -22,7 +22,7 @@ const a = 5;
 // b = 6;
 ```
 All statements below are also acceptable
-```
+```dart
 // Without type or var
 const a = 5;
 // With a type
@@ -31,13 +31,13 @@ const int b = 5;
 const var c = 6;
 ```
 __Class level const variable__ should be initialized as follows:
-```
+```dart
 class A{
     static const a = 5;
 }
 ```
 __Instance level const variable is not possible.__
-```
+```dart
 class A {
     // Uncommenting below statement will give compilation error.
     // Because const is not possible to be used with instance level 
@@ -46,7 +46,7 @@ class A {
 }
 ```
 The another major use of `const` is used to make the **object immutable**. To make a class object immutable we need to __use the const keyword with constructor__ and make __all the fields as final__ like mentioned below.
-```
+```dart
 Class A {
     final a, b;
     const A(this.a, this.b);
@@ -74,7 +74,7 @@ we can use __const keyword to a list.__
 `const a = const []` - A variable `a` __initialized as `const` which contains a list of `const` objects__(i.e., The list should contain only compile time constant and immutable objects). So we __can't able to assign `a` with another list.__
 
 `var a = const []` - A variable `a` __initialized as `var` which contains a list `const` objects__. So __we can able to assign another list to the variable `a`.__
-```
+```dart
 Class A {
     final a, b;
     const A(this.a, this.b);
@@ -117,7 +117,7 @@ void main() {
 
 final keyword also used to make the variable to __hold a constant value__. Once initialized we can't able to change the value.
 
-```
+```dart
 final a = 5;
 // Uncommenting below statement will give compilation error.
 // Because a is declared as final.
@@ -126,7 +126,7 @@ final a = 5;
 
 All statements mentioned below are acceptable.
 
-```
+```dart
 // Without type or var
 final a = 5;
 // With a type
@@ -137,7 +137,7 @@ final var c = 6;
 
 Can able to __assign a runtime value__.
 
-```
+```dart
 // DateTime.now() will return the time when the line is getting
 // executed. Which is a runtime value.
 final a = DateTime.now();
@@ -147,7 +147,7 @@ final c = b;
 
 __Class level final variable__ must be initialized in the same line.
 
-```
+```dart
 Class A {
     static final a = 5;
     static final b = DateTime.now();
@@ -155,7 +155,7 @@ Class A {
 ```
 
 __Instance level final variable__ must be initialized in the same line or in the constructor initialization. The value will be put into memory when the object is created.
-```
+```dart
 Class A {
     final a = 5;
 }
@@ -183,7 +183,7 @@ void main() {
 
 Assigning a __list__.
 
-```
+```dart
 final a = [5, 6, 7, 5.6, A()];
 // Uncommenting Below statement will give compilation error.
 // Because we are trying to reinitialize the object with another list.
