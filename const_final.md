@@ -1,5 +1,7 @@
 # **ULTIMATE** *const* vs *final* 
 
+After thorough practical understanding, here is the best intel possible on this topic !!
+
 ## **const**
 
 const keyword used to make a variable to store a compile time constant value. Compile time constant value is a value which will be constant while compiling :-)
