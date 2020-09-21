@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 void main() {
   // Numbers - Primitive
   int numa = 10;
@@ -10,6 +8,9 @@ void main() {
   bool is_bool = true;
 
   // List and Map too
+  List nums = [1, 2, 3, 4];
 
-  // print(numa + deci + name + is_bool);
+  Map dict = {1: 'one', 2: 'two', 3: 'three'};
+
+  print("$numa $deci $name $is_bool $nums $dict");
 }
