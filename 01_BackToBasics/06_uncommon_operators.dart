@@ -23,6 +23,7 @@ void main() {
 
   // Ternary Operator
   var x = know > donno ? know : donno;
+  print(x);
 
   // Null Ternary Operator
   var empty;
