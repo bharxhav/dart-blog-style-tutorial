@@ -55,4 +55,5 @@ void main() {
   }
 
   var awaited = i_return_null() ?? 0; // Best way to show an application
+  print(awaited);
 }
