@@ -14,6 +14,9 @@ num is a class, like how list, int etc are in python
 void main() {
   print(num.parse('10'));
   print(num.parse('10.50'));
+  // Throws FormatException if not possible
+
+  // Thus we use tryParse when we are not sure
 
   print(num.tryParse('input')); // Returns null if not possible
   // This can be combined with ?? operator for more clean programs
